@@ -1,0 +1,167 @@
+html {
+  background-color:#AC9C91;
+}
+
+h1, h2, h3, h4, h5 {
+  text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+  font-weight:normal;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  color:#987D70;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size:35px;
+  line-height:110%;
+  margin:0;
+  padding:35px 0 10px;
+  text-align:left;
+  text-transform:lowercase;
+}
+
+h3 {  
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight:normal;
+  font-style: italic;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+address {
+    padding-left: 30px;
+    font-weight: bold;
+    margin: 20px 0 30px 0;
+}
+
+body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 160%;
+  color: #535353;
+  width: 770px;
+  padding: 0;
+  margin: -10px auto 20px auto;
+}
+
+nav {
+  background-color:#917F71;
+  width: 770px;
+  height: 30px;
+  display: block;
+  text-transform:lowercase;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  width: auto;
+  float: right;
+}
+
+
+nav li{
+  float: left;
+  font-size: 13px;
+  line-height: 30px;
+  display: block;
+  margin: 0;
+  background-color:#917F71;
+}
+
+nav a{
+  text-decoration: none;
+  color:#FFFFFF;
+  padding: 0 10px;
+  height: 28px;
+  display: block;
+}
+
+nav a:hover {
+  border-bottom: solid 2px #A7978B;
+}
+
+nav a:active {
+  border-bottom: solid 2px #BDA492;
+}
+
+nav .active a {
+  border-bottom: solid 2px #F6F5F3;
+}
+
+section {
+  background-image: url(../img/background.jpg);
+  background-color: #f6f5f3;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 390px;
+  position: relative;
+  min-height: 600px;
+  padding: 60px 30px 70px 350px;
+
+}
+
+aside {
+  position:absolute;
+  width:340px;
+  top: 10px;
+  left:0;
+  text-align:center;
+}
+
+footer {
+  margin: 0;
+  padding: 2px 0 2px 5px;
+  background-color: #FFFFFF;
+  color:#917F71;
+  clear: both;
+  display:block;
+  font-size: .7em;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+  border-bottom:1px dotted #ac9c91;
+}
+
+.caption {
+  display: block;
+  font-size: 11px;
+  color: #917F71;
+}
+
+.eat {
+  color: red;
+}
+
+.clear:before, .clear:after {
+    content:"";
+    display:table;
+}
+.clear:after {
+    clear:both;
+}
+.clear {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 10px 20px 0px #595959;
+     -moz-box-shadow: 0px 10px 20px 0px #595959;
+          box-shadow: 0px 10px 20px 0px #595959;
+}
+
+.top_image{
+    position: relative;
+    top: 22px;
+}

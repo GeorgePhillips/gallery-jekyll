@@ -1,13 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<title>Eat Deli &amp; Bar</title>
+    	<meta name="description" content="Great food, great coffee, great wines, great service, great prices">
+    	<meta name="author" content="George Phillips, georgepaulphillips@gmail.com">
+    	<meta name="viewport" content="width=device-width">
+    	<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Eat Deli &amp; Bar</h1>
+        <img src="img/relaxed_fresh.gif" width="356" height="44" alt="relaxed_fresh" class="top_image">
+        <div class="shadow">
+        	<nav>
+        		<ul id="navigation">
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="about.html">About</a></li>
+        			<li><a href="food.html">Food &amp; Wine</a></li>
+        			<li><a href="contact.html">Contact</a></li>
+        			<li><a href="location.html">Location</a></li>
+        			<li><a href="hours.html">Hours</a></li>
+        		</ul>
+        	</nav>
+        	<section class="clear">
+        		<aside>
+        			<p><img alt="Eat Deli &amp; Bar logo" width="125" height="125" src="img/logo.jpg"></p>
+        			<p><img width="275" height="335" alt="{{ page.image_description }}" src="{{ page.image_path }}"></p>
+        			<p class="eat"><strong>eat</strong> Deli &amp; Bar <em class="caption">Great food, great coffee, great wines, great service, great prices</em></p>
+        		</aside>
 
-<html>
-	{% include head.html %}
+        		{{ content }}
+        	</section>
+        	<footer>© Eat Deli &amp; Bar : Fairlie : South Canterbury : New Zealand : (03) 685 6275</footer>
+        </div>
 
-	<body>
-		<header>
-			<h1>{{ page.title }}</h1>
-		</header>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-37472773-6']);
+          _gaq.push(['_trackPageview']);
 
-		{{ content }}
-	</body>
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </body>
 </html>

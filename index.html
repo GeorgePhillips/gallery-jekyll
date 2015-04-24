@@ -1,30 +1,14 @@
 ---
 layout: default
-title: Gallery
+image_path: /img/sign.jpg
+image_description: Eat Deli & Bar Sign
 ---
 
-<p class="hero">
-	{{ site.description }}
-</p>
-
-<div id="gallery" class="gallery-list js-masonry">
-	{% for picture in site.pictures %}
-		<a class="gallery-item" href="{{ picture.url | prepend: site.baseurl }}">
-			<img class="gallery-item-image" src="{{ picture.image_path }}" alt="{{ picture.title }}">
-			<p class="gallery-item-text">{{ picture.title }}</p>
-		</a>
-	{% endfor %}
-</div>
-
-<script>
-	var gallery = document.querySelector("#gallery"),
-		masonry = new Masonry(gallery, {
-			itemSelector: ".gallery-item",
-			isFitWidth: true,
-			transitionDuration: 0
-		});
-
-	imagesLoaded(gallery, function () {
-		masonry.layout();
-	});
-</script>
+<h2 class="editable">home</h2>
+<h3 class="editable">Introducing <span class="eat"><strong>eat</strong> Deli &amp; Bar</span>. Great food, great coffee, great wines, great service, great prices notice the trend?</h3>
+<p class="editable">We believe we are the ideal stopover for breakfast, brunch, lunch, coffee or a light snack, depending on your schedule or how long you wish to stay!</p>
+<p class="editable">Bottom line is, if youre traveling up or down the South Island of New Zealand, between Christchurch and Queenstown, <span class="eat"><strong>eat</strong> Deli &amp; Bar</span> is the place to stop.</p>
+<p class="editable">The moment you walk in you realise our place is special. Relax and unwind while enjoying the urban feel we've created - alfresco in summer or tucked up on the deep buttoned leather lounge by the fire in winter.</p>
+<p class="editable">Located at the gateway of the Mackenzie Country and magnificent Aoraki Mount Cook, eat offers the best in fast, deli style food, easy on the sedentary stomach and the wallet!&nbsp;</p>
+<p class="editable">While stopping with us take the opportunity to use our internet connection - complimentary to all our patrons.</p>
+<p class="editable">We hope that this site gives you a little understanding of what we offer, how we do it and also why we do it.</p>
